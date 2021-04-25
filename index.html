@@ -29,7 +29,18 @@ th {
   background-color: #DDEFEF;
   color: #336B6B;
 }
-
+ 
+  #red {
+  color:red;
+    
+  }
+  #yellow{
+  color:yellow;
+  }
+  
+  p {
+    font-family: 'Raleway', sans-serif;
+  }
 </style>
 
 
@@ -39,6 +50,9 @@ th {
 <body data-new-gr-c-s-check-loaded="14.993.0" data-gr-ext-installed="">
 
 <h2>Singapore carpark availability table</h2> <br />
+  <p>Data from <a href="www.data.gov.sg">data.gov.sg</a></p>
+  <p id="red">Carpark usuability levels in red have carpark usuability rates that are more than 80%.</p>
+  <p id="yellow">Carparks in yellow are rows with NaN values or are carparks with lots available more than total lots.</p>
 <table id="carparkTable">
     <thead class="table_header"><tr>
         <th>Carpark Number</th>
